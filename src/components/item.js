@@ -1,6 +1,10 @@
-const Item = () => {
+import './Transaction.css'
+
+const Item = (props) => {
+  const name = "พักโรงแรม"
+  const amount = 5000
     return (
-      <li>ค่าเดินทาง <span>200</span></li>
+    <li>{props.title}<span>-{props.amount}</span></li>
     );
 }
 

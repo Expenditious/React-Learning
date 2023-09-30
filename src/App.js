@@ -1,13 +1,12 @@
 import Transaction from "./components/Transaction";
-
-const Title = () => <h1>โปรแกรมบัญชีรายรับรายจ่าย</h1>
-
+import './App.css'
 
 
 function App() {
+  const design = {color:"red",textAlign:"center",fontsize:"1.5rem"}
   return (
-    <div>
-      <Title></Title>
+    <div className="container">
+      <h1 style={design}>แอพบัญชีรายรับ - รายจ่าย</h1>
       <Transaction></Transaction>
     </div>
   );
