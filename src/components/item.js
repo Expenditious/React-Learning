@@ -1,10 +1,7 @@
-import './Transaction.css'
-
 const Item = (props) => {
-  const name = "พักโรงแรม"
-  const amount = 5000
+  const {title,amount} = props
     return (
-    <li>{props.title}<span>-{props.amount}</span></li>
+    <li>{title}<span>-{amount}</span></li>
     );
 }
 
