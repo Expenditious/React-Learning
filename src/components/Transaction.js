@@ -12,7 +12,7 @@ const Transaction = () => {
     <ul className="item-list">
      <Item title={data[0].title} amount = {data[0].amount}/>
       {data.map((element)=>{
-          return  <Item title={element.title} amount={element.amount}/>
+          return  <Item {...element}/>
       })}
     </ul>
     );
