@@ -7,9 +7,6 @@ const Transaction = () => {
     {title:"ค่าขนส่ง",amount:8000},
     {title:"ค่าน้ำมัน",amount:2000},
     {title:"ค่ากิน",amount:3000},
-    {title:"เงินเดือน",amount:30000},
-    {title:"ค่าประกัน",amount:300},
-    {title:"ค่าเดินทาง",amount:800}
   ]
     return (
     <ul className="item-list">
@@ -19,6 +16,6 @@ const Transaction = () => {
     </ul>
     );
   }
-
+ 
 
 export default Transaction
