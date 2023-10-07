@@ -1,7 +1,8 @@
 import './FormComponent.css'
 import { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid';
 
-const FormComponent = () =>{
+const FormComponent = (props) =>{
 
 
     const [title,setTitle] = useState('')
@@ -17,10 +18,11 @@ const FormComponent = () =>{
     const saveItem = (event) => {
         event.preventDefault();
         const itemData = {
+            id : uuidv4(),
             title : title,
             amount : Number(amount)
         }
-        console.log(itemData);
+        props.onAddItem(itemData)
         setTitle('')
         setAmount(0)
     }
